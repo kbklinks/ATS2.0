@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend: Dev",
+      "type": "shell",
+      "command": "cargo run",
+      "group": "build",
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Backend: Test",
+      "type": "shell",
+      "command": "cargo test",
+      "group": "test",
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Frontend: Dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": "build",
+      "options": { "cwd": "frontend" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: Build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "options": { "cwd": "frontend" },
+      "problemMatcher": []
+    }
+  ]
+}
